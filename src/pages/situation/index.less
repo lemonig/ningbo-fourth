@@ -1,0 +1,45 @@
+.title {
+  padding: 12px 0px 8px;
+  color: #101010;
+  font-size: 17px;
+}
+.imagesContainer {
+  --adm-image-width: 90px;
+  --adm-image-height: 60px;
+}
+.situation-wrap {
+  height: 100%;
+  .main {
+    box-sizing: border-box;
+    padding: 10px 20px;
+    height: calc(100% - 45px);
+    overflow-y: auto;
+  }
+  .desc {
+    background-color: rgba(245, 245, 245, 100);
+    line-height: 26px;
+    color: rgba(16, 16, 16, 100);
+    border: 1px solid rgba(187, 187, 187, 100);
+    padding: 8px 6px;
+  }
+  .select {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    > div {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 0 8px;
+      line-height: 30px;
+      background-color: rgba(245, 245, 245, 100);
+      font-size: 16px;
+      margin: 8px 0;
+      // border: 1px solid rgba(11, 73, 176, 100);
+    }
+    .selected {
+      border: 1px solid rgba(11, 73, 176, 100);
+      color: rgba(11, 73, 176, 100);
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.home-wrap {
+  :global(.adm-plain-anchor) {
+    background-color: #bbb;
+  }
+  height: 100%;
+  .main {
+    box-sizing: border-box;
+    padding: 10px 0px;
+    height: calc(100% - 45px);
+    overflow-y: auto;
+  }
+  .list {
+    > p {
+      border-bottom: 1px solid rgba(187, 187, 187, 0.3);
+    }
+    > p:last-child {
+      border: none;
+    }
+  }
+  .list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    color: #000;
+    line-height: 45px;
+    padding: 0 6px;
+    > span:first-child {
+      font-size: 14px;
+    }
+    > span:last-child {
+      color: rgba(154, 154, 154, 100);
+    }
+  }
+}
